@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/edb5f21956.js" crossorigin="anonymous"></script>
+
+    <title>Ecomerce Sport Equipments Web Page</title>
+
+<style>
+  
+    #logo{
+        margin-top: 15px;
+    }
+
+    #hd{
+        background-color: aqua;
+    }
+    #menu #btn:hover{
+        background-color: blue;
+        color: cornsilk;
+        border-color: black;
+    }
+    #btn{
+        border-style: solid;
+        border-color: black;
+    }
+    input{
+      width: 35px;
+      height: 37px;
+      vertical-align:middle;
+      text-align: center;
+    }
+    #equipments{
+      border: 2px solid black;
+      padding: 15px;
+    
+    }
+    h2{
+      font-size: 25px;
+      text-align: center;
+      font-weight: 600;
+    }
+    img{
+      height: 150px;
+      width: 150px;
+    }
+    #totalproduct{
+      max-width: fit-content;
+    }
+
+   
+
+    
+</style>
+</head>
+<body>
+  
+
+    <nav class="navbar navbar-expand-sm bg-primary" >
+        <div class="container-sm" id="logo"><img src="https://www.designmantic.com/blog/wp-content/uploads/2021/02/Sports-Logo-Designs-1280x720.jpg" width="120px" height="120px" alt=""></div>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+    <li class="nav-item h3"><a class="nav-link" href="#"> Home </a></li>
+    <li class="nav-item h3"><a class="nav-link" href="#"> Products </a></li>
+    <li class="nav-item h3"><a class="nav-link" href="#"> Contact Us </a></li>
+    <li class="nav-item h3"><a class="nav-link" href="#"> About Us </a></li>
+    <li class="nav-item h3"><a class="nav-link" href="#"> <i class="fa-sharp fa-solid fa-cart-shopping"></i> </a></li>
+  </ul>
+  </div>
+
+</nav>
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="D:\Javascript\Ecommerce Webpage\Neeraj Chopra.png" alt="Neeraj Chopra" class="d-block" style="width: 100%; height: 500px;">
+    </div>
+    <div class="carousel-item">
+      <img src="D:\Javascript\Ecommerce Webpage\Messi Ronaldo.png" alt="Chicago" class="d-block" style="width:100%; height: 500px;">
+    </div>
+    <div class="carousel-item">
+      <img src="D:\Javascript\Ecommerce Webpage\dhoni csk.png" alt="New York" class="d-block" style="width:100%; height: 500px;">
+    </div>
+  </div>
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container mt-3" id="totalproduct">
+<div class="row">
+  <div class="col-sm-2">
+        <div class="container mt-3" id="equipments">
+        <h2>Puma Shoe</h2>
+        <p>The Sports Shoe For Men and women</p>
+          <img src="https://assetscdn1.paytm.com/images/catalog/product/F/FO/FOOPUMA-SPORTS-PUMA335823DCC903BA/6.jpg" alt="Card image"><hr>
+            <a class="btn btn-info" data-bs-toggle="collapse" data-bs-toggle="tooltip" title="Click For Information" href="#puma">Running Shoes For Track</a><hr>
+            <p id="puma" class="collapse">Discover the latest collection of PUMA running shoes online at lowest prices. Find your perfect fit with our wide range of sizes, colors and styles.</p>
+            <button class="btn btn-primary" onclick="sub()">-</button> <input type="text" value="1" id="inpval"> <button class="btn btn-primary" onclick="add()">+</button><br><br>
+            <h3 style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;" >&#8377; <span id="amount">1500</span></h3>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <div class="container mt-3" id="equipments">
+          <h2>Adidas Shoe</h2>
+          <p>The Branded Sports Shoe For Men</p>
+            <img src="https://5.imimg.com/data5/SELLER/Default/2020/8/KG/AJ/MD/64760880/adidas-sports-shoes-500x500.jpg" alt="Card image"><hr>
+            <a class="btn btn-info" data-bs-toggle="collapse" data-bs-toggle="tooltip" title="Click For Information" href="#adidas">Running and Walking Shoes</a><hr>
+              <p id="adidas" class="collapse">Find adidas Men's Running Shoes at best price. All styles, colours & collections of Men's Running Shoes available at adidas online store.</p>
+              <button class="btn btn-primary" onclick="decr()">-</button> <input type="text" value="1" id="inpvalu"> <button class="btn btn-primary" onclick="incr()">+</button><br><br>
+              <h3 style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">&#8377; <span id="rate">1900</span></h3>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <div class="container mt-3" id="equipments">
+          <h2>Volley Ball</h2>
+          <p>The Molten Volley Ball with soft outlayer</p>
+            <img src="https://5.imimg.com/data5/FW/LV/FE/SELLER-100897512/molten-volleyball-ball-500x500.jpg" alt="Card image"><hr>
+            <a class="btn btn-info" data-bs-toggle="collapse" data-bs-toggle="tooltip" title="Click For Information" href="#volleyball">Both Synthetic and ground</a><hr>
+              <p id="volleyball" class="collapse">The Molten FLISTATEC Volleyball is the official volleyball of USA Volleyball, the NCAA Men's Volleyball Championships. </p>
+              <button class="btn btn-primary" onclick="low()">-</button> <input type="text" value="1" id="inpvalue"> <button class="btn btn-primary" onclick="high()">+</button><br><br>
+              <h3 style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">&#8377; <span id="price">999</span></h3>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <div class="container mt-3" id="equipments">
+          <h2>Foot Ball</h2>
+          <p>The Best Foot Ball at low price</p>
+            <img src="https://5.imimg.com/data5/YJ/YE/MY-51340855/nivia-football-500x500.jpg" alt="Card image"><hr>
+            <a class="btn btn-info" data-bs-toggle="collapse" data-bs-toggle="tooltip" title="Click For Information" href="#football">Both turf and mud ground</a><hr>
+              <p id="football" class="collapse">A good quality football can be in the range of Rs. 400 to Rs. 4000 in India. Depending on the players' level, choose the right football.</p>
+              <button class="btn btn-primary" onclick="lowe()">-</button> <input type="text" value="1" id="inpvalue1"> <button class="btn btn-primary" onclick="grea()">+</button><br><br>
+              <h3 style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">&#8377; <span id="val">3500</span></h3>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <div class="container mt-3" id="equipments">
+          <h2>Cricket Kit</h2>
+          <p>The Top quality Cricket Kit With Free Bat</p>
+            <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51pycdTO2pL._SX425_.jpg" alt="Card image"><hr>
+            <a class="btn btn-info" data-bs-toggle="collapse" data-bs-toggle="tooltip" title="Click For Information" href="#cricketkit">Full Cricket Kit, Free Bat</a><hr>
+              <p id="cricketkit" class="collapse">A cricket kit usually consists of a cricket helmet, cricket gloves, cricket chest guard, and a cricket batting pad. Get full kit at best price from our online store.</p>
+              <button class="btn btn-primary" onclick="down()">-</button> <input type="text" value="1" id="inpvalue2"> <button class="btn btn-primary" onclick="up()">+</button><br><br>
+              <h3 style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">&#8377; <span id="rupees">25000</span></h3>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <div class="container mt-3" id="equipments">
+          <h2>FootBallBoots</h2>
+          <p>The Best Football Boots With top grip</p>
+            <img src="https://rukminim1.flixcart.com/image/832/832/krntoy80/shoe/m/j/1/8-5-msf1ffc6-9-new-balance-neo-flame-original-imag5ehk8yfnr7nt.jpeg?q=70" alt="Card image"><hr>
+            <a class="btn btn-info" data-bs-toggle="collapse" data-bs-toggle="tooltip" title="Click For Information" href="#footballboot">Both Synthetic and ground</a><hr>
+              <p id="footballboot" class="collapse">Find adidas Football Boots and Shoes at best price. All styles, colours & Our collections of FootBallBoots available at adidas store</p>
+              <button class="btn btn-primary" onclick="downwar()">-</button> <input type="text" value="1" id="inpvalue3"> <button class="btn btn-primary" onclick="forwa()">+</button><br><br>
+              <h3 style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">&#8377; <span id="cost">1000</span></h3>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+
+</div>
+</div>
+      
+<script>
+  
+  function add(){
+    let a= Number(document.getElementById("inpval").value);
+    let b= Number(document.getElementById("amount").innerHTML)
+  
+    if(a<10)
+    {
+      a++;
+      document.getElementById("inpval").value=a;
+      let b = 1500*a;
+      document.getElementById("amount").innerHTML= b;
+    }
+    else
+    {
+      alert("Use Can Choose 10 Quantity Not More Than That");
+    }
+  }
+
+  
+  function sub(){
+    let a= Number(document.getElementById("inpval").value);
+    let b= Number(document.getElementById("amount").innerHTML);
+    if(a>1)
+    {
+      a--;
+      document.getElementById("inpval").value=a;
+      let b=1500*a;
+      document.getElementById("amount").innerHTML=b;
+    }
+    else
+    {
+      alert("Please Select the number of quantity you want to purchase");
+    }
+  }
+
+  function incr(){
+    let a= Number(document.getElementById("inpvalu").value);
+    let b= Number(document.getElementById("rate").innerHTML);
+    if(a<10)
+    {
+      a++;
+      document.getElementById("inpvalu").value=a;
+      let b = 1900*a;
+      document.getElementById("rate").innerHTML= b;
+    }
+    else
+    {
+      alert("Use Can Choose 10 Quantity Not More Than That");
+    }
+  }
+
+  
+  function decr(){
+    let a= Number(document.getElementById("inpvalu").value);
+    let b= Number(document.getElementById("rate").innerHTML);
+    if(a>1)
+    {
+      a--;
+      document.getElementById("inpvalu").value=a;
+      let b=1900*a;
+      document.getElementById("rate").innerHTML=b;
+    }
+    else
+    {
+      alert("Please Select the number of quantity you want to purchase");
+    }
+  }
+
+  function high(){
+    let a= Number(document.getElementById("inpvalue").value);
+    let b= Number(document.getElementById("price").innerHTML);
+    if(a<10)
+    {
+      a++;
+      document.getElementById("inpvalue").value=a;
+      let b=999*a;
+      document.getElementById("price").innerHTML=b;
+    }
+    else
+    {
+      alert("Use Can Choose 10 Quantity Not More Than That");
+    }
+  }
+
+  
+  function low(){
+    let a= Number(document.getElementById("inpvalue").value);
+    let b= Number(document.getElementById("price").innerHTML);
+    if(a>1)
+    {
+      a--;
+      document.getElementById("inpvalue").value=a;
+      let b=999*a;
+      document.getElementById("price").innerHTML=b;
+    }
+    else
+    {
+      alert("Please Select the number of quantity you want to purchase");
+    }
+  }
+
+  function grea(){
+    let a= Number(document.getElementById("inpvalue1").value);
+    let b= Number(document.getElementById("val").innerHTML);
+    if(a<10)
+    {
+      a++;
+      document.getElementById("inpvalue1").value=a;
+      let b=3500*a;
+      document.getElementById("val").innerHTML=b;
+    }
+    else
+    {
+      alert("Use Can Choose 10 Quantity Not More Than That");
+    }
+  }
+
+  
+  function lowe(){
+    let a= Number(document.getElementById("inpvalue1").value);
+    let b= Number(document.getElementById("val").innerHTML);
+
+    if(a>1)
+    {
+      a--;
+      document.getElementById("inpvalue1").value=a;
+      let b=3500*a;
+      document.getElementById("val").innerHTML=b;
+    }
+    else
+    {
+      alert("Please Select the number of quantity you want to purchase");
+    }
+  }
+
+  function up(){
+    let a= Number(document.getElementById("inpvalue2").value);
+    let b= Number(document.getElementById("rupees").innerHTML);
+    if(a<10)
+    {
+      a++;
+      document.getElementById("inpvalue2").value=a;
+      let b=25000*a;
+      document.getElementById("rupees").innerHTML=b;
+    }
+    else
+    {
+      alert("Use Can Choose 10 Quantity Not More Than That");
+    }
+  }
+
+  
+  function down(){
+    let a= Number(document.getElementById("inpvalue2").value);
+    let b= Number(document.getElementById("rupees").innerHTML);
+    if(a>1)
+    {
+      a--;
+      document.getElementById("inpvalue2").value=a;
+      let b=25000*a;
+      document.getElementById("rupees").innerHTML=b;
+    }
+    else
+    {
+      alert("Please Select the number of quantity you want to purchase");
+    }
+  }
+
+  function forwa(){
+    let a= Number(document.getElementById("inpvalue3").value);
+    let b= Number(document.getElementById("cost").innerHTML);
+    if(a<10)
+    {
+      a++;
+      document.getElementById("inpvalue3").value=a;
+      let b=1000*a;
+      document.getElementById("cost").innerHTML=b;
+    }
+    else
+    {
+      alert("Use Can Choose 10 Quantity Not More Than That");
+    }
+  }
+
+  
+  function downwar(){
+    let a= Number(document.getElementById("inpvalue3").value);
+    let b= Number(document.getElementById("cost").innerHTML);
+    if(a>1)
+    {
+      a--;
+      document.getElementById("inpvalue3").value=a;
+      let b=1000*a;
+      document.getElementById("cost").innerHTML=b;
+    }
+    else
+    {
+      alert("Please Select the number of quantity you want to purchase");
+    }
+  }
+
+  
+
+
+</script>
+
+</body>
+</html>
